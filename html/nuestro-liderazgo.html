@@ -10,238 +10,60 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
     <link rel="stylesheet" href="../css/styles.css" />
-    <style>
-      .lider-grande {
-        display: grid;
-        grid-template-columns: 1fr 1.4fr;
-        gap: 40px;
-        align-items: center;
-        background: var(--white);
-        border-radius: var(--radius);
-        overflow: hidden;
-        box-shadow: var(--shadow);
-        margin: 32px auto;
-        max-width: 960px;
-        width: 100%;
-        padding: 16px;
-      }
-      .lider-grande img {
-        width: 100%;
-        height: 380px;
-        object-fit: cover;
-        object-position: top;
-        aspect-ratio: 4 / 5;
-      }
-      .lider-grande-info {
-        padding: 36px 36px 36px 0;
-      }
-      .lider-grande-info h3 {
-        font-size: 1.8rem;
-        margin-bottom: 8px;
-      }
-      .lider-rol {
-        color: var(--teal);
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: 0.85rem;
-        margin-bottom: 20px;
-        display: block;
-      }
-      .lider-grande-info p {
-        font-size: 1rem;
-        line-height: 1.8;
-      }
-
-      section h2 {
-        max-width: 960px;
-        width: 100%;
-        margin: 0 auto 14px;
-        font-size: clamp(1.6rem, 4vw, 2rem);
-        padding: 0 16px;
-        text-align: center;
-      }
-
-      .divider {
-        margin: 14px auto 28px;
-        max-width: 180px;
-        width: 100%;
-      }
-
-      .contact-line {
-        display: flex;
-        gap: 12px;
-        flex-wrap: wrap;
-        margin-top: 12px;
-      }
-
-      .contact-card-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        padding: 8px 12px;
-        border-radius: 30px;
-        font-size: 0.9rem;
-        font-weight: 700;
-        color: white;
-        text-decoration: none;
-        transition:
-          transform 0.2s,
-          opacity 0.2s;
-      }
-
-      .contact-card-link:hover {
-        transform: translateY(-1px);
-        opacity: 0.9;
-      }
-
-      .contact-wpp {
-        background: #25d366;
-      }
-
-      .contact-email {
-        background: #d44638;
-      }
-
-      section p {
-        max-width: 960px;
-        width: 100%;
-        margin: 0 auto 24px;
-        padding: 0 16px;
-        text-align: center;
-      }
-
-      @media (max-width: 640px) {
-        .lider-grande {
-          grid-template-columns: 1fr;
-        }
-        .lider-grande-info {
-          padding: 24px;
-        }
-        .lider-grande img {
-          height: auto;
-          max-height: 400px;
-        }
-      }
-
-      header .redes {
-        display: flex;
-        gap: 12px;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 28px;
-      }
-
-      header .red-social {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        padding: 8px 16px;
-        border-radius: 50px;
-        font-weight: 700;
-        font-size: 0.85rem;
-        text-decoration: none;
-        transition:
-          transform 0.2s,
-          opacity 0.2s;
-      }
-
-      header .red-social:hover {
-        transform: translateY(-2px);
-        opacity: 0.9;
-      }
-
-      header .red-facebook {
-        background: #1877f2;
-        color: white;
-      }
-
-      header .red-instagram {
-        background: linear-gradient(
-          45deg,
-          #f09433,
-          #e6683c,
-          #dc2743,
-          #cc2366,
-          #bc1888
-        );
-        color: white;
-      }
-
-      header .red-youtube {
-        background: #ff0000;
-        color: white;
-      }
-    </style>
   </head>
 
   <body>
     <nav>
-      <a href="../index.html"
-        ><img src="../jpg/logo-sin-fondo.png" alt="Logo Fuente de Vida"
-      /></a>
-      <ul>
-        <li><a href="../index.html#visitar">Visi­tanos</a></li>
+      <a href="../index.html"><img src="../jpg/logo-sin-fondo.png" alt="Logo Fuente de Vida" /></a>
+      <button class="menu-hamburguesa" id="menuBtn" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul id="navMenu" class="nav-menu">
+        <li><a href="../index.html#visitar">Visítanos</a></li>
         <li><a href="../index.html#horarios">Horarios</a></li>
         <li><a href="../index.html#liderazgo">Liderazgo</a></li>
         <li><a href="../index.html#contacto">Contacto</a></li>
+        <li><a href="https://checkout.square.site/merchant/T9JNSZQ254EQE/checkout/TNEE3MU3PWLOR77OKN5VECLM?src=qr" target="_blank" rel="noopener noreferrer">Donaciones</a></li>
       </ul>
     </nav>
 
-    <header>
-      <img src="../jpg/logo-sin-fondo.png" alt="Logo Fuente de Vida" />
-      <h1>Nuestro Liderazgo</h1>
-      <h3>Conoce a quienes guían nuestra iglesia</h3>
-      <div class="redes">
-        <a href="https://facebook.com" target="_blank" class="red-social red-facebook">
-          <i class="fab fa-facebook"></i> Facebook
-        </a>
-        <a href="https://instagram.com" target="_blank" class="red-social red-instagram">
-          <i class="fab fa-instagram"></i> Instagram
-        </a>
-        <a href="https://youtube.com" target="_blank" class="red-social red-youtube">
-          <i class="fab fa-youtube"></i> YouTube
+    <header class="hero-header" style="background-image: url('../jpg/liderazgo-fdv.jpg'); background-size: cover; background-position: center; background-attachment: fixed; min-height: 70vh;">
+      <div class="hero-header-content">
+        <div>
+          <h1>Nuestro Liderazgo</h1>
+          <h3>Conoce a quienes guían nuestra iglesia</h3>
+        </div>
+        <a class="contact-card-link contact-celulas-general hero-header-cta" href="celulas-fdv.html">
+          <i class="fas fa-users"></i> Células
         </a>
       </div>
     </header>
 
     <section>
-      <h2>Pastores</h2>
+      <h2>Liderazgo</h2>
       <div class="divider"></div>
 
       <div class="lider-grande">
-        <img
-          src="../jpg/JacoboYCarla.jpg"
-          alt="Pastor Jacobo Castillo y Carla Rosales"
-        />
+        <img src="../jpg/jacobo-carla.JPG" alt="Pastor Jacobo Castillo y Carla Rosales" />
         <div class="lider-grande-info">
           <h3>Jacobo Castillo + Carla Rosales</h3>
-          <span class="lider-rol">Pastores de Fuente de Vida Madison</span>
+          <span class="lider-rol">Pastores Generales</span>
           <p>
-            Con amor y pasion por el evangelio, el Pastor Jacobo y su esposa
-            Carla lideran la Iglesia Fuente de Vida con un corazón de servicio.
-            Su vision es alcanzar a cada familia de Madison con el mensaje de
-            esperanza y salvacion de Jesucristo.
+            Con amor y pasión por el evangelio, el Pastor Jacobo y su esposa Carla lideran la Iglesia Fuente de Vida con un corazón de servicio. Su visión es alcanzar a cada familia de Madison con el mensaje de esperanza y salvación de Jesucristo.
           </p>
           <div class="contact-line">
-            <a
-              class="contact-card-link contact-wpp"
-              href="https://wa.me/16086181831"
-              target="_blank"
-              ><i class="fab fa-whatsapp"></i> WhatsApp</a
-            >
-            <a
-              class="contact-card-link contact-email"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=pastorfdvjacobocastillo@gmail.com"
-              target="_blank"
-              ><i class="fas fa-envelope"></i>
-              pastorfdvjacobocastillo@gmail.com</a
-            >
+            <a href="https://wa.me/16082176835" target="_blank" rel="noopener noreferrer" class="contact-card-link contact-wpp">
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="mailto:pastorfdvjacobocastillo@gmail.com" class="contact-card-link contact-email">
+              <i class="fas fa-envelope"></i> Email
+            </a>
           </div>
         </div>
       </div>
     </section>
-
     <!-- ===== PASTORES DE RED ===== -->
     <section>
       <h2>Pastores de Red</h2>
@@ -251,7 +73,7 @@
 
     <section class="bg-light">
       <div class="lider-grande">
-        <img src="../jpg/luis-itzel.jpeg" alt="Líderes Red Verde" />
+        <img src="../jpg/luis-itzel.JPG" alt="Líderes Red Verde" />
         <div class="lider-grande-info">
           <h3>Luis Rosas + Izcel Gonzales</h3>
           <span class="lider-rol">Líderes Red Verde / Ministros</span>
@@ -263,18 +85,24 @@
             salvación a cada rincón de la comunidad.
           </p>
           <div class="contact-line">
+
             <a
-              class="contact-card-link contact-wpp"
-              href="https://wa.me/16086980723"
-              target="_blank"
-              ><i class="fab fa-whatsapp"></i> WhatsApp</a
-            >
-            <a
-              class="contact-card-link contact-email"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=piolo776@yahoo.com"
-              target="_blank"
-              ><i class="fas fa-envelope"></i> piolo776@yahoo.com</a
-            >
+    class="contact-card-link contact-wpp"
+    href="https://wa.me/16086980723"
+    target="_blank"
+    ><i class="fab fa-whatsapp"></i> WhatsApp</a
+  >
+  <a
+    class="contact-card-link contact-email"
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=piolo776@yahoo.com"
+    target="_blank"
+    ><i class="fas fa-envelope"></i> piolo776@yahoo.com</a
+  >
+  <a
+    class="contact-card-link contact-celulas-verde"
+    href="celulas-verde.html"
+    ><i class="fas fa-users"></i> Células</a
+  >
           </div>
         </div>
       </div>
@@ -282,7 +110,7 @@
 
     <section>
       <div class="lider-grande">
-        <img src="../jpg/omar-carmen.jpeg" alt="Líderes Red Morada" />
+        <img src="../jpg/omar-carmen.JPG" alt="Líderes Red Morada" />
         <div class="lider-grande-info">
           <h3>Omar Robles + Maria Torres</h3>
           <span class="lider-rol">Líderes Red Morada / Ministros</span>
@@ -294,17 +122,25 @@
           </p>
           <div class="contact-line">
             <a
-              class="contact-card-link contact-wpp"
-              href="https://wa.me/16085047826"
-              target="_blank"
-              ><i class="fab fa-whatsapp"></i> WhatsApp</a
-            >
-            <a
-              class="contact-card-link contact-email"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=omarrobles0618@gmail.com"
-              target="_blank"
-              ><i class="fas fa-envelope"></i> omarrobles0618@gmail.com</a
-            >
+    class="contact-card-link contact-wpp"
+    href="https://wa.me/16085047826"
+    target="_blank"
+    ><i class="fab fa-whatsapp"></i> WhatsApp</a
+  >
+  <a
+    class="contact-card-link contact-email"
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=omarrobles0618@gmail.com"
+    target="_blank"
+    ><i class="fas fa-envelope"></i> omarrobles0618@gmail.com</a
+  >
+  <a
+    class="contact-card-link contact-celulas-morada"
+    href="celulas-morada.html"
+    ><i class="fas fa-users"></i> Células</a
+  >
+
+
+
           </div>
         </div>
       </div>
@@ -312,7 +148,7 @@
 
     <section class="bg-light">
       <div class="lider-grande">
-        <img src="../jpg/jorge-brenda.jpeg" alt="Líderes Red Rosa" />
+        <img src="../jpg/jorge-brenda.JPG" alt="Líderes Red Rosa" />
         <div class="lider-grande-info">
           <h3>Jorge Macias + Brenda Obregon</h3>
           <span class="lider-rol">Líderes Red Rosa / Ministros</span>
@@ -322,20 +158,25 @@
             fortalecidos en la Palabra de Dios, creyendo que cada familia
             transformada es una semilla que cambia una comunidad entera.
           </p>
-          <div class="contact-line">
-            <a
-              class="contact-card-link contact-wpp"
-              href="https://wa.me/16085208779"
-              target="_blank"
-              ><i class="fab fa-whatsapp"></i> WhatsApp</a
-            >
-            <a
-              class="contact-card-link contact-email"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=jorgemaciasfdv1@outlook.com"
-              target="_blank"
-              ><i class="fas fa-envelope"></i> jorgemaciasfdv1@outlook.com</a
-            >
-          </div>
+         <div class="contact-line">
+  <a
+    class="contact-card-link contact-wpp"
+    href="https://wa.me/16085208779"
+    target="_blank"
+    ><i class="fab fa-whatsapp"></i> WhatsApp</a
+  >
+  <a
+    class="contact-card-link contact-email"
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=jorgemaciasfdv1@outlook.com"
+    target="_blank"
+    ><i class="fas fa-envelope"></i> jorgemaciasfdv1@outlook.com</a
+  >
+  <a
+    class="contact-card-link contact-celulas-rosa"
+    href="celulas-rosa.html"
+    ><i class="fas fa-users"></i> Células</a
+  >
+</div>
         </div>
       </div>
     </section>
@@ -353,18 +194,23 @@
             paso de su ministerio.
           </p>
           <div class="contact-line">
-            <a
-              class="contact-card-link contact-wpp"
-              href="https://wa.me/16087728871"
-              target="_blank"
-              ><i class="fab fa-whatsapp"></i> WhatsApp</a
-            >
-            <a
-              class="contact-card-link contact-email"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=Escritor217@gmail.com"
-              target="_blank"
-              ><i class="fas fa-envelope"></i> Escritor217@gmail.com</a
-            >
+              <a
+    class="contact-card-link contact-wpp"
+    href="https://wa.me/16087728871"
+    target="_blank"
+    ><i class="fab fa-whatsapp"></i> WhatsApp</a
+  >
+  <a
+    class="contact-card-link contact-email"
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=Escritor217@gmail.com"
+    target="_blank"
+    ><i class="fas fa-envelope"></i> Escritor217@gmail.com</a
+  >
+  <a
+    class="contact-card-link contact-celulas-azul"
+    href="celulas-azul.html"
+    ><i class="fas fa-users"></i> Células</a
+  >
           </div>
         </div>
       </div>
@@ -372,7 +218,7 @@
 
     <section class="bg-light">
       <div class="lider-grande">
-        <img src="../jpg/ricardo-noemi.jpeg" alt="Líderes Red Roja" />
+        <img src="../jpg/ricardo-noemi.JPG" alt="Líderes Red Roja" />
         <div class="lider-grande-info">
           <h3>Ricardo Chavarria + Noemi Aleman</h3>
           <span class="lider-rol">Líderes Red Roja / Ministros</span>
@@ -383,18 +229,23 @@
             y restaura hogares.
           </p>
           <div class="contact-line">
-            <a
-              class="contact-card-link contact-wpp"
-              href="https://wa.me/16084691217"
-              target="_blank"
-              ><i class="fab fa-whatsapp"></i> WhatsApp</a
-            >
-            <a
-              class="contact-card-link contact-email"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=rchavarria674@yahoo.com"
-              target="_blank"
-              ><i class="fas fa-envelope"></i> rchavarria674@yahoo.com</a
-            >
+       <a
+    class="contact-card-link contact-wpp"
+    href="https://wa.me/16084691217"
+    target="_blank"
+    ><i class="fab fa-whatsapp"></i> WhatsApp</a
+  >
+  <a
+    class="contact-card-link contact-email"
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=rchavarria674@yahoo.com"
+    target="_blank"
+    ><i class="fas fa-envelope"></i> rchavarria674@yahoo.com</a
+  >
+  <a
+    class="contact-card-link contact-celulas-roja"
+    href="celulas-roja.html"
+    ><i class="fas fa-users"></i> Células</a
+  >
           </div>
         </div>
       </div>
@@ -402,7 +253,7 @@
 
     <section>
       <div class="lider-grande">
-        <img src="../jpg/jenifer-alejandor.jpeg" alt="Guinda Jóvenes" />
+        <img src="../jpg/jenifer-alejandro.JPG" alt="Guinda Jóvenes" />
         <div class="lider-grande-info">
           <h3>Jenifer Alejandro</h3>
           <span class="lider-rol">Líder Red Guinda (Jóvenes)</span>
@@ -414,18 +265,25 @@
             necesitan.
           </p>
           <div class="contact-line">
-            <a
-              class="contact-card-link contact-wpp"
-              href="https://wa.me/16086287571"
-              target="_blank"
-              ><i class="fab fa-whatsapp"></i> WhatsApp</a
-            >
-            <a
-              class="contact-card-link contact-email"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=jatorres0624@gmail.com"
-              target="_blank"
-              ><i class="fas fa-envelope"></i> jatorres0624@gmail.com</a
-            >
+
+     <a
+    class="contact-card-link contact-wpp"
+    href="https://wa.me/16086287571"
+    target="_blank"
+    ><i class="fab fa-whatsapp"></i> WhatsApp</a
+  >
+  <a
+    class="contact-card-link contact-email"
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=jatorres0624@gmail.com"
+    target="_blank"
+    ><i class="fas fa-envelope"></i> jatorres0624@gmail.com</a
+  >
+  <a
+    class="contact-card-link contact-celulas-guinda"
+    href="celulas-jovenes.html"
+    ><i class="fas fa-users"></i> Células</a
+  >
+            
           </div>
         </div>
       </div>
@@ -462,5 +320,34 @@
   </div>
 </footer>
     </section>
+
+    <script>
+      // Menu Hamburguesa
+      const menuBtn = document.getElementById('menuBtn');
+      const navMenu = document.getElementById('navMenu');
+
+      menuBtn.addEventListener('click', function() {
+        menuBtn.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        menuBtn.setAttribute('aria-expanded', menuBtn.classList.contains('active'));
+      });
+
+      const menuLinks = navMenu.querySelectorAll('a');
+      menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          menuBtn.classList.remove('active');
+          navMenu.classList.remove('active');
+          menuBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      document.addEventListener('click', function(event) {
+        if (!event.target.closest('nav')) {
+          menuBtn.classList.remove('active');
+          navMenu.classList.remove('active');
+          menuBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    </script>
   </body>
 </html>
